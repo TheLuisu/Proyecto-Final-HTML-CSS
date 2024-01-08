@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Programa 04 - Java</h1>
+        <h2 class="nameh2">Búsqueda en un vector</h2>
+
+        <pre>
+            <code class="language-java line-numbers" data-stard="1" style="white-space:pre-wrap">
+                /*
+                Luis Angel Castillo Cerda 1856931
+                Lenguajes de Programación - LMV - V5
+                Ing. Ismael Gutierrez Pimentel
+                */
+                import java.util.Scanner;
+                
+                public class Tarea_19 {
+                    public static void main(String[] args){
+                        Scanner lec = new Scanner(System.in);
+                
+                        int i, n, b;
+                        int[] A;
+                
+                        System.out.print("Ingrese el total de numeros: ");
+                        n = lec.nextInt();
+                        A = new int[n];
+                
+                        for(i = 0; i < n; i++){
+                            System.out.print("A[" + (i+1) + "] = ");
+                            A[i] = lec.nextInt();
+                        }
+                
+                        System.out.print("Ingrese el vector a buscar: ");
+                        b = lec.nextInt();
+                        int cont=0;
+                        for(i = 0; i < n; i++){
+                            if( b == A[i] ){
+                                cont++;
+                            }
+                        }
+                        System.out.println("\nEl numero [" + b + "] se encontro: " + cont + " veces.\n");
+                
+                        System.out.print("A = ");
+                        for(i = 0; i < n; i++){
+                            System.out.print("[" + A[i] + "] ");
+                        }
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='23_Tarea18.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='25_Tarea20.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

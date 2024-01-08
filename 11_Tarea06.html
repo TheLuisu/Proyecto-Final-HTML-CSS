@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 06 - Python</h1>
+        <h2 class="nameh2">¿Qué es Python?</h2>
+        <p class="datsIn">Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.<br>
+            Es un lenguaje interpretado, dinámico y multiplataforma.<br>
+            Es administrado por la Python Software Foundation. Posee una licencia de código abierto, denominada Python Software Foundation License.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <h3 class="nameh3">Simbolos</h3>
+        <p class="datsIn">
+            La sintaxis en Python determina que hay una serie de palabras que no podemos emplear como constantes o variables o
+            como nombre identificador. Son todas en minúsculas y han sido reservadas por el lenguaje Python.
+            <br><br>
+            Las palabras reservadas son: and, assert, break, class, continue, def, del, elif, else, except, exec, finally, for,
+            from, global, if, imoort, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield.
+        <h3 class="nameh3">Intrucciones</h3>
+        <p class="datsIn">
+            Una instrucción en Python es un conjunto de datos insertados en una secuencia estructurada para ordenar al intérprete
+            realizar una operación determinada.<br>
+            Intrucciones simples: Son aquellas órdenes que python comprende respetando su sintaxis que comienzan y culminan en una sola línea.<br>
+            Intrucciones compuestas: Son aquellas que python comprende respetando su sintaxis comenzando con una cláusula de sentencia compuesta y
+            terminando con «:»  continuan debajo con una identación conformando así un bloque de código.
+        </p>
+        </p>
+        <p class="datsIn">Se tiene que saber que como tal, no tiene un esqueleto para todos los programas, en todo caso, seria
+        simplmente importar librerias necesarias, y empezar a programas, ya que no necesita de un "public class" como Java.<br><br>
+        Python tiene dos tipos de modo, los cuales son el modo interactivo (ejecutando la orden en tiempo real)
+        y el modo script (escribiendo el código en Python y ejecutando después con el intérprete.)<br><br>
+        Parte esencial de la sintaxis en Python son los identificadores, que sirven para identificar una variable, función,
+        clase, módulo u objeto. Habitualmente los identificadores empiezan con letras, en mayúscula o minúscula, o con un
+        guión bajo seguido de un cero y varias letras o números. Python diferencia entre mayúsculas y minúsculas y no admite
+        caracteres de puntuación como @, $ o %.<br>
+        En caso de que el identificador empiece con un guión bajo o con dos guiones bajos, significa que es privado. Si el
+        identificador finaliza con dos guiones bajos, el identificador es un nombre especial definido por lenguaje.<br><br></p>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/06_Tareas_python.jpg" class="imgV4" alt="Python">
+                <p class="datsIn">En Python al igual que Prolog, solo descargas un programa con las librerias y lo ejecutas.
+                Este programa contara con una interfaz igual al de las lineas de comandos y ahí se empezara a programar.<br>
+                    Primero comprueba si tu ordenador ejecuta la versión 32 bits de Windows o la de 64, en "Tipo de sistema" 
+                    en la página de "Acerca de".<br><br>
+                    Su instalador se descarga directamente desde su pagina web.<br><br>
+                    Si el ordenador ejecuta la versión de 64 bits de Windows, descarga Windows x86-64 executable installer. 
+                    De lo contrario, descarga Windows x86 executable installer. Después de descargar el instalador, deberías 
+                    ejecutarlo (dándole doble click) y seguir las instrucciones.<br><br>
+                    Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "Setup". Asegúrate de marcar 
+                    las casillas "Add Python 3.6 to PATH" o "Add Python to your environment variables" y hacer click en "Install Now"</p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn"> Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, 
+            programación imperativa y, en menor medida, programación funcional.</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-python line-numbers" data-stard="0" style="white-space:pre-wrap">
+                >>> def fib(n):
+>>>     a, b = 0, 1
+>>>     while a < n:
+>>>         print(a, end=' ')
+>>>         a, b = b, a+b
+>>>     print()
+>>> fib(12)
+0 1 1 2 3 5 8 13 21 34 55 89
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='10_Tarea05.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='12_Tarea07.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

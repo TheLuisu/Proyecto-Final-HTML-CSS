@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 05 - Prolog</h1>
+        <h2 class="nameh2">¿Qué es Prolog?</h2>
+        <p class="datsIn">Prolog (derivado de "PROgrammation en LOGique") nació a comienzos de la década de los 70, de la mano de un investigador de la 
+            Universidad de Marsella (Alain Colmerauer), mientras dirigiía en un proyecto de tratamiento algorítmico de lenguajes naturales.<br>
+            Inicialmente se trataba de un lenguaje interpretado hasta que, una década más tarde, se creó un compilador capaz de traducir Prolog en un 
+            conjunto de instrucciones de una máquina abstracta denominada WAM ("Warren Abstract Machine"), lo que lo convirtió desde entonces en un lenguaje
+            semi-interpretado.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <h3 class="nameh3">Simbolos</h3>
+        <p class="datsIn">
+            La sintaxis en Prolog determina que hay una serie de palabras que no podemos emplear como constantes o variables o
+            como nombre identificador. Son todas en minúsculas y han sido reservadas por el lenguaje Prolog.
+            <br><br>
+            Las palabras reservadas son: bgidriver, bgifont, check_determ, code, config, diagnostics, error, errorlever, etc.
+        <p class="datsIn">Prolog no cuenta con una estructura inicial, simplemente con tener instalado el editor de texto puedes empezar a programar.
+            Un programa Prolog es un conjunto de cláusulas de Horn (hechos
+            y reglas) donde: <br><br>
+            1. Todas las cláusulas acaban con [.]<br><br>
+            2. El símbolo ← se escribe como [:-] que se lee como si
+            (condicional). En los hechos no es necesario (basta poner el
+            átomo y .)<br><br>
+            3. Los nombres de predicado y función siguen las pautas
+            habituales de los identificadores pero comienzan con
+            minúscula.<br><br>
+            4. Los nombres de variable también siguen esas pautas, pero
+            comienzan por mayúscula.<br><br>
+            5. Los átomos en el cuerpo de las reglas se separan mediante
+            comas [,] que se leen como y.<br><br>
+            6. Ejecutar un programa no tiene sentido como tal (en principio).
+            Lo que se hace es plantear objetivos a resolver.</p>
+        <pre>
+            <code class="language-prolog line-numbers" data-stard="0" style="white-space:pre-wrap">
+                %Tenemos lo que son los hechos
+                Relacion ( Objeto )
+                es_perro(blacky).
+                
+                %Tenemos las reglas
+                Regla :- Relacion
+                Varible(A,C) :- RelacionN
+                muchomasgrande(A,B) :- masgrande(A,B)
+            </code>
+        </pre>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/05_Tareas_prolog.png" class="imgV4" alt="Prolog">
+                <p class="datsIn">Para comenzar a programar/utilizar Prolog, se necesitaria descargar la aplicacion SWI-Prolog.<br>
+                El programa tiene una intefaz tipo linea de comandos, en la cual es donde se empezaran a escribir los hechos y reglas.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">Prolog se enmarca en el paradigma de los lenguajes lógicos y declarativos, lo que lo diferencia enormemente 
+            de otros lenguajes más populares tales como Fortran, Pascal, C o Java. Quedando como un multiparadigma.</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-prolog line-numbers" data-stard="0" style="white-space:pre-wrap">
+                % Estos son los hechos o bases de conocimiento, se guardara en Desktop/ejemplo.pl
+                es_perro(blacky).
+                es_gato(tom).
+                es_raton(jerry).
+                
+                % Es lo que se desea saber/calcular
+                consult('/Users/#/Desktop/ejemplo.pl').
+                true
+                es_gato(tom).
+                true.
+                es_gato(blacky)
+                false.
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='09_Tarea04.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='11_Tarea06.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 14 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

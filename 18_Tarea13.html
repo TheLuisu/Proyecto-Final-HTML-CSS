@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 13 - PHP</h1>
+        <h2 class="nameh2">¿Qué es PHP?</h2>
+        <p class="datsIn">PHP es el acrónimo de Hipertext Preprocesor. Es un lenguaje de programación del lado del 
+            servidor gratuito e independiente de plataforma, rápido, con una gran librería de funciones y mucha 
+            documentación.<br>
+            Un lenguaje del lado del servidor es aquel que se ejecuta en el servidor web, justo antes de que se 
+            envíe la página a través de Internet al cliente. Las páginas que se ejecutan en el servidor pueden realizar
+            accesos a bases de datos, conexiones en red, y otras tareas para crear la página final que verá el cliente.
+            El cliente solamente recibe una página con el código HTML resultante de la ejecución de la PHP. Como la 
+            página resultante contiene únicamente código HTML, es compatible con todos los navegadores. Podemos saber
+            algo más sobre la programación del servidor y del cliente en el artículo qué es DHTML.
+        </p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <p class="datsIn">Punto y coma:<br>
+            Los comandos en PHP terminan con punto y coma. Es un error muy común olvidárselo. No ponerlo causa que PHP
+            trate múltiples comandos como 1 haciéndolo imposible que lo entienda, generando un Parse error.<br><br>
+            Símbolo del $<br>
+            El símbolo del $ se usa de diferentes maneras en distintos lenguajes de programación. En PHP se coloca 
+            delante de todas las variables para que PHP reconozca que es un variable y analice más rápidamente el 
+            código.<br><br>
+            Con doble barra ( // ): Permite comentar una línea de código. Es bastante útil para un comentario directo
+            después de una línea de código o desactivar una línea de código que nosde problemas.<br><br>
+            Con /* y */: Se puede comentar varias líneas de código. Funciona como unas etiquetas, permite abrir y 
+            cerrar comentarios casi en cualquier parte del código. Es ideal si hay una buena parte de código que 
+            queremos desactivar.<br><br>
+            Normas para nombrar variables: <br>
+            1. Los nombres deben empezar con una letra o “_” (barra baja).<br>
+            2. Pueden tener caracteres a-z, A-Z, 0-9 y “_”.<br>
+            3. No deben contener espacios. Si un nombre debe tener un espacio, sustituirlo por “_”. Por ejemplo 
+            $nombre_usuario.<br>
+            4. Son case-sensitive, es decir, distinguen mayúsculas de minúsculas.<br><br>
+            La estructura de php, siempre inicia con un &lt;?php y terminta con /> para poder incrustarlo en los html.
+            <br>
+        </p>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/13_Tareas_PHP.png" class="imgV4" alt="PHP">
+                <p class="datsIn">Paquetes todo en uno:<br>
+                    Hay un par de distribuciones populares de PHP para Windows que vienen como paquetes
+                    "todo en uno". Además de PHP, estos también instalan y configuran el servidor web Apache y un
+                    servidor de bases de datos MySQL. Estos paquetes son verdaderamente útiles para los desarrolladores
+                    que desean configurar y ejecutar la pila de desarrollo web completa de forma rápida y sencilla.
+                    <br>
+                    XAMPP y WampServer son dos de las distribuciones de Windows más populares entre la comunidad de PHP
+                    <br><br>
+                    Independientemente de la herramienta que se elija, el proceso de instalación de estas herramientas
+                    es bastante sencillo. Solamente se necesita descargar el instalador correspondiente y ejecutarlo 
+                    para instalarlo en Windows.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">PHP es un lenguaje multiparadigma, pues este tiene los paradigmas de imperativo, orientado
+        a objetos, funcional y reflexivo.
+        </p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-php line-numbers" data-stard="1" style="white-space:pre-wrap">
+                &lt;?php
+                // Prueba de variables númericas
+                echo "contador es 17";
+                $contador = 17;
+                echo "&lt;br>";
+                echo "contador ahora es la suma de 18 + 5";
+                $contador = 18 + 5;
+                echo $contador;
+                echo "&lt;br>";
+                echo "Valor de $suma con $numero1 y $numero2";
+                $numero1 = 5;
+                $numero2 = 5;
+                $suma = $numero1 + $numero2;
+                echo $suma;
+                ?>
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='17_Tarea12.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='19_Tareas14.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

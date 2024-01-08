@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Programa 02 - Java</h1>
+        <h2 class="nameh2">Conversión de monedas</h2>
+        <pre>
+            <code class="language-java line-numbers" data-stard="1" style="white-space:pre-wrap">
+                /*
+                Luis Angel Castillo Cerda 1856931
+                Lenguajes de Programación - LMV - V5
+                Ing. Ismael Gutierrez Pimentel
+                */
+                
+                import javax.swing.JOptionPane;
+                
+                public class Tarea_17 {
+                    public static void main(String[] args){
+                        String ingreso_datos;
+                        String[] conversiones = {"Peso a Dolar","Peso a Euro", "Peso a Yen Japones","Peso a Dolar (Hong Kong)"};
+                        double pesos, dolar, euro, yen, hong;
+                
+                        ingreso_datos = JOptionPane.showInputDialog("Ingresa los pesos a convertir: ");
+                        pesos = Double.parseDouble(ingreso_datos);
+                
+                        int conversor = JOptionPane.showOptionDialog(null, "Los pesos a convertir son: " + pesos, "Conversion",
+                                JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, conversiones, null);
+                        switch (conversor +1){
+                            case 1:
+                                dolar = 0.05*pesos;
+                                JOptionPane.showMessageDialog(null, dolar + " Dolares", "Conversion Peso - Dolar", JOptionPane.INFORMATION_MESSAGE);
+                                break;
+                            case 2:
+                                euro = 0.0415*pesos;
+                                JOptionPane.showMessageDialog(null, euro + " Euros", "Conversion Peso - Euro", JOptionPane.INFORMATION_MESSAGE);
+                                break;
+                            case 3:
+                                yen = 5.4768*pesos;
+                                JOptionPane.showMessageDialog(null, yen + " Yenes", "Conversion Peso - Yen", JOptionPane.INFORMATION_MESSAGE);
+                                break;
+                            case 4:
+                                hong = 0.39*pesos;
+                                JOptionPane.showMessageDialog(null, hong + " Dolares Hong Kong", "Conversion Peso - Dolar Hong Kong", JOptionPane.INFORMATION_MESSAGE);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='21_Tarea16.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='23_Tarea18.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

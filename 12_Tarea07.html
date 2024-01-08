@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 07 - Scheme</h1>
+        <h2 class="nameh2">¿Qué es Scheme?</h2>
+        <p class="datsIn">Scheme es un lenguaje de programación que surgió en los laboratorios del MIT en 1975, cuando Guy L. Steele y Gerarld J. Sussman buscaban un lenguaje con una 
+            semántica muy clara y sencilla. Pensaban que los lenguajes no se deberían desarrollar añadiendo muchas características, sino quitando las debilidades y las limitaciones 
+            que hacen que las características adicionales parezcan necesarias. Scheme es un dialecto de Lisp, es un lenguaje interpretado, muy expresivo y soporta varios paradigmas. 
+            Estuvo influenciado por el cálculo lambda. El desarrollo de Scheme ha sido lento, ya que la gente que estandarizó Scheme es muy conservadora en cuanto a añadirle nuevas 
+            características,porque la calidad ha sido siempre más importante que la utilidad empresarial. Por eso Scheme es considerado como uno de los lenguajes mejor diseñados de 
+            propósito general. Aprender Scheme hará que seais mejores programadores cuando utiliceis otros lenguajes de programación.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img class="imgV4" alt="Scheme" src="IMG/Tareas/07_Tareas_Scheme.png">
+                <p class="datsIn">La estructura básica del lenguaje son las listas.<br>
+                    Scheme posee una sintaxis reducida comparada a otros lenguajes. Utiliza la notación prefija.<br>
+                    Los paréntesis son obligatorios, ya que separan las instrucciones que serán evaluadas por el intérprete. Para realizar comentarios dentro del código, se utiliza el ";",
+                    así se marca que toda la línea será de comentario. <br>
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img class="imgV4" alt="Interprete" src="IMG/Tareas/07_Tareas_DrRacket.png">
+                <p class="datsIn">Su interprete se llama Dr. Racket. Tiene una interfaz tipo linea de comandos.<br>
+                    Este interprete te permite tener los comandos de Scheme, así como sus funciones básicas y graficas, como los dibujos/gráficos que se realizan con el lenguaje de programación.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">El lenguaje de programación Scheme es un multi-paradigma, siendo estos el logico y el funcional, pero entre los paradigmas en los que mas destaca seria el Funcional.</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-scheme line-numbers" data-stard="1" style="white-space:pre-wrap">
+                 ;; Cálculo de las secuencias masculinas y femeninas de Hofstadter como una lista de pares
+                
+                (define (hofstadter-male-female n)
+  (letrec ((female (lambda (n)
+		     (if (= n 0)
+			 1
+			 (- n (male (female (- n 1)))))))
+	   (male (lambda (n)
+		   (if (= n 0)
+		       0
+		       (- n (female (male (- n 1))))))))
+    (let loop ((i 0))
+      (if (> i n)
+	  '()
+	  (cons (cons (female i)
+		      (male i))
+		(loop (+ i 1)))))))
+
+(hofstadter-male-female 8)
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='11_Tarea06.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='13_Tarea08.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

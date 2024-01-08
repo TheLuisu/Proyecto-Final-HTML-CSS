@@ -1,0 +1,162 @@
+﻿.desingDatos{
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+}
+
+/* ENCABEZADOS/TITULOS */
+
+.name{
+    background-color: lightcoral;
+    text-align: center;
+    font-family: Cambria Math;
+    color: antiquewhite;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nameh2{
+    background-color: lightcoral;
+    text-align: center;
+    font-family: Cambria Math;
+    color: antiquewhite;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nameh3{
+    background-color: lightcoral;
+    text-align: center;
+    font-family: Cambria Math;
+    color: antiquewhite;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* PARRAFOS */
+
+.dats{
+    background-color: lightblue;
+    font-style: normal;
+    font-family: Century Gothic;
+    padding: 30px 20px;    
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.datsIn{
+    background-color: lightblue;
+    font-style: normal;
+    font-family: Century Gothic;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+/* IMAGENES */
+
+.bord{
+    background-color: lightblue;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+.img{
+    width: 300px;
+    max-width: 100%;
+    float: left;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: -8px;
+}
+.imgV2{
+    width: 300px;
+    max-width: 100%;
+    float: right;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -8px;
+}
+
+.imgV3{
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    float: left;
+    background-color: white;
+}
+.imgV4{
+    display: block;
+    width: 500px;
+    max-width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    float: left;
+    background-color: white;
+}
+.imgV5{
+    display: block;
+    width: 500px;
+    max-width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px 30px 10px 5px;
+    float: right;
+    background-color: white;
+}
+
+/* TABLAS */
+
+#customers {
+    font-family: Century Gothic;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 80%;
+    margin: 30px auto 30px auto;
+    background-color: lightblue;
+}
+
+#customers td, #customers th {
+    border: 1px solid #bbbbbb;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){
+    background-color: antiquewhite;
+    
+}
+
+#customers th {
+    font-family: Cambria Math;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    background-color: lightcoral;
+    color: antiquewhite;
+}
+
+#customers td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: black;
+}

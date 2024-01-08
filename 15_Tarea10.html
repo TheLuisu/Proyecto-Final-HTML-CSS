@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 10 Gödel</h1>
+        <h2 class="nameh2">¿Qué es Gödel?</h2>
+        <p class="datsIn">Gödel es un lenguaje de programación declarativo y de propósito general de la familia de los lenguajes de programación lógica. Es un lenguaje fuertemente 
+            tipificado, el sistema de tipificación se basa en muchos tipos de lógica con polimorfismo paramétrico. Tiene un sistema de módulos. Gödel soporta una precisión infinita 
+            números enteros, racionales de precisión infinita, y también números de punto flotante. Puede resolver restricciones sobre dominios finitos de enteros y también 
+            restricciones racionales lineales. Soporta el procesamiento de conjuntos finitos. También tiene una regla de cálculo flexible y un operador de poda que generaliza el
+            compromiso del lenguaje de programación lógica concurrente. Se hace un énfasis considerable en la meta-lógica de Gödel instalaciones que proporcionan un apoyo significativo
+            a los meta-programas que hacen análisis, transformación, compilación, verificación, depuración, etc. El carácter declarativo de Gödel lo hace particularmente adecuado para
+            su uso como lenguaje de enseñanza; reduce la brecha que existe actualmente entre la teoría y la práctica en la programación lógica; hace posibles herramientas avanzadas
+            de ingeniería de software tales como depuradores declarativos y generadores de compilación; reduce el esfuerzo que supone proporcionar una aplicación paralela del lenguaje; 
+            y ofrece un margen sustancial para la paralelización en tales implementaciones.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/10_Tareas_Godel1.png" alt="Godel1" class="imgV4">
+                <img src="IMG/Tareas/10_Tareas_Godel2.png" alt="Godel1" class="imgV5">
+                <p class="datsIn">
+                    Gödel es un lenguaje en el que las sentencias lógicas llevan un orden y en el que existe el polimorfismo. Está basado en módulos (que aceptan polimorfismo) y 
+                    en tipos de datos (soporta enteros y racionales con una precisión infinita, y número en coma flotante) y tiene una amplia librería de módulos predefinidos.<br><br>
+                    Es un buen lenguaje para tareas de meta-programación, tales como compilación, depuración, análisis, verificación o transformación de programas, ya que es mucho 
+                    más declarativo que Prolog, por ejemplo. Como curiosidad, se puede destacar que este lenguaje no funciona en un entorno Windows.<br><br><br><br><br><br>
+                    Encontre que todos los programas deben de tener:<br><br>
+                    MODULE<br><br>
+                    BASE<br><br>
+                    CONSTANT<br><br>
+                    PREDICATE
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <p class="datsIn">No se encontro entornos de trabajo para Gödel</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language- line-numbers" data-stard="1" style="white-space:pre-wrap">
+                MODULE          M1.
+                BASE            Day, ListOfDay.
+                CONSTANT        Nil : ListOfDay;
+                                Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday :
+                                Day.
+                FUNCTION        Cons : Day * ListOfDay -> ListOfDay.
+                PREDICATE       Append : ListOfDay * ListOfDay * ListOfDay;
+                                Append3 : ListOfDay * ListOfDay * ListOfDay * ListOfDay.
+                Append(Nil,x,x).
+                Append(Cons(u,x),y,Cons(u,z)) <-
+                                Append(x,y,z).
+                Append3(x,y,z,u) <-
+                                Append(x,y,w) &
+                                Append(w,z,u).
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='14_Tarea09.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='16_Tarea11.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

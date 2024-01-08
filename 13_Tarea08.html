@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 08 - Haskell</h1>
+        <h2 class="nameh2">¿Qué es Haskell?</h2>
+        <div class="bord">
+            <div class="clearfix">
+            <img src="IMG/Tareas/08_Tareas_Haskell.png" alt="Haskell" class="imgV3">    
+                <p class="datsIn">Es un lenguaje de programación estandarizado multi-propósito, funcionalmente puro, con evaluación no estricta y memorizada, y fuerte tipificación estática.
+                Su nombre se debe al lógico estadounidense Haskell Curry, debido a su aportación al cálculo lambda, el cual tiene gran influencia en el lenguaje. En Haskell, "una función
+                es un ciudadano de primera clase" del lenguaje de programación. Como lenguaje de programación funcional, el constructor de controles primario es la función. El lenguaje tiene
+                sus orígenes en las observaciones de Haskell Curry y sus descendientes intelectuales.</p>
+            </div>
+        </div>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <p class="datsIn">Haskell no cuenta con una estructura inicial, simplemente con tener instalado el editor de texto puedes empezar a programar.<br><br>
+            A diferencia de los operadores, las funciones se utilizan en notación prefija, es decir, el nombre de la función se coloca antes de sus 
+            arámetros. Los nombres de las funciones sólo pueden contener caracteres normales, es decir, letras, dígitos, comillas y subrayados. El primer 
+            carácter de un identificador de función no puede ser una letra mayúscula ni un dígito.<br><br>
+            También es posible aplicar parcialmente una función, sin suministrarle todos sus parámetros. Esto genera una nueva función, que puede utilizarse 
+            como otra función cualquiera. Esta facilidad es especialmente útil en presencia de orden superior.<br>
+            Haskell proporciona una amplia gama de funciones predefinidas. Algunas de las más significativas son las siguientes:<br><br>
+            Numéricas: abs, negate, div, mod, round, floor, ceiling, sqrt, cos, sin, tan, acos, asin, atan<br>
+            Ordinales: succ, pred, fromEnum, toEnum<br>
+            Booleanas: not<br>
+            Usando caracteres: chr, ord, isDigit, isLower, isUpper, toLower, toUpper<br>
+            Sobre tuplas: fst, snd<br>
+            Usando strings: words, unwords, unlines, lines<br>
+            Usando listas: concat, reverse, take, drop, splitAt, head, tail, last, init, length, zip, unzip, map, filter, zipWith, takeWhile, dropWhile, span, foldl, foldl1,foldr,foldr1, 
+            scanl, scanl1, scanr, scanr1<br>
+            Sobre funciones: flip<br>
+        </p>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/08_Tareas_Editor.png" alt="Editor Haskell" class="imgV3"> 
+                <p class="datsIn">Aunque Haskell se puede programar en cualquier editor de texto como Atom o Notepad++, tiene su propia distribucion sobre su editor, el cual se encuentra en
+                su pagina web, esté nada mas se debe de descargar e instalar, como cualquier editor de texto.</p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">Haskell es un lenguaje de programación PURO, esto se refiere a que su unico paradigma es ser Funcional</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-haskell line-numbers" data-stard="1" style="white-space:pre-wrap">
+                cont::Int->Int
+cont 0=0
+cont n= 1+ cont (div n 10)
+suma::Int->Int
+suma 0=0
+suma n=(mod n 10)+suma(div n 10)
+
+prod::Int->Int
+prod 0=1
+prod n=(mod n 10)*prod(div n 10)
+
+resultado::Int->String
+resultado 0=""
+resultado n="numero de digitos:"++show(cont n)++" "++"la suma es:"++show(suma n)++" "++"el producto es:"++show(prod n)
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='12_Tarea07.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='14_Tarea09.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

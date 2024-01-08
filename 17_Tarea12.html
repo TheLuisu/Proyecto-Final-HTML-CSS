@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 12 - ADA</h1>
+        <h2 class="nameh2">¿Qué es ADA?</h2>
+        <p class="datsIn">Ada es un lenguaje de programación orientado a objetos y fuertemente tipado de forma estática 
+            que fue diseñado por Jean Ichbiah de CII Honeywell Bull por encargo del Departamento de Defensa de los 
+            Estados Unidos. Es un lenguaje multipropósito, orientado a objetos y concurrente, pudiendo llegar desde la 
+            facilidad de Pascal hasta la flexibilidad de C++.
+            <br><br>
+            Fue diseñado con la seguridad en mente y con una filosofía orientada a la reducción de errores comunes y
+            difíciles de descubrir. Para ello se basa en un tipado muy fuerte y en chequeos en tiempo de ejecución
+            (desactivables en beneficio del rendimiento). La sincronización de tareas se realiza mediante la primitiva 
+            rendezvous.<br><br>
+            Ada se usa principalmente en entornos en los que se necesita una gran seguridad y fiabilidad como la
+            defensa, la aeronáutica (Boeing o Airbus), la gestión del tráfico aéreo (como Indra en España) y la 
+            industria aeroespacial entre otros.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <h3 class="nameh3">Simbolos</h3>
+        <p class="datsIn">Algunos de las palabras reservadas que tiene ADA son: <br>
+            procedure, with, begin, end, for, loop, package.
+        </p>
+        <h3 class="nameh3">Sintaxis y Estructura</h3>
+        <p class="datsIn">La sintaxis, inspirada en Pascal, es bastante legible incluso para personas que no conozcan 
+            el lenguaje. Es un lenguaje que no escatima en la longitud de las palabras clave, en la filosofía de que 
+            un programa se escribe una vez, se modifica decenas de veces y se lee miles de veces (legibilidad es más 
+            importante que rapidez de escritura).<br><br>
+            Es indiferente el uso de mayúsculas y minúsculas en los identificadores y palabras claves, es decir es un 
+            lenguaje case-insensitive.<br><br>
+            En Ada, todo el programa es un único procedimiento, que puede contener subprogramas (procedimientos o 
+            funciones).<br><br>
+            Cada sentencia se cierra con end qué_cerramos. Es un modo de evitar errores y facilitar la lectura. No es
+            necesario hacerlo en el caso de subprogramas, aunque todos los manuales lo aconsejan y casi todos los 
+            programadores de Ada lo hacen.<br><br>
+            El operador de asignación es :=, el de igualdad =. A los programadores de C y similares les puede confundir 
+            este rasgo inspirado en Pascal.<br><br>
+            La sintaxis de atributos predefinidos es Objeto'Atributo (o Tipo'Atributo) (nota: esto sólo aplica a
+            atributos predefinidos por el lenguaje, ya que no es el concepto de atributo típico de OOP).
+            Se distingue entre "procedimientos" (subrutinas que no devuelven ningún valor pero pueden modificar sus 
+            parámetros) y "funciones" (subrutinas que devuelven un valor y no modifican los parámetros). Muchos
+            lenguajes de programación no hacen esta distinción. Las funciones de Ada favorecen la seguridad al reducir 
+            los posibles efectos colaterales, pues no pueden tener parámetros in out.</p>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/12_Tareas_ADA.jpg" class="imgV4" alt="ADA">
+                <p class="datsIn">Se puede empezar a programar en Notepad++, dado que esta disponible en el apartado 
+                de lenguajes. Pero para poder compilarlo se necesita una aplicacion exclusiva, aquí se tienen dos
+                opciones, una es GNAT, un compilador libre y gratuito y el otro es Aonix ObjecADA, un compilador 
+                    comercial que proporciona una versión gratuita de evaluación, con limitaciones en el número y 
+                    tamaño de archivos y en el número de controles que se pueden colocar en una ventana.<br><br>
+                    GNAT es el único compilador de Ada gratuito completamente funcional. De hecho es parte del GNU 
+                    Compiler Collection y por tanto es software libre. Sin embargo, la empresa que lo mantiene AdaCore, 
+                    ofrece contratos de mantenimiento de las últimas versiones, antes de hacerlas públicas.<br>
+                    GNAT es también el único compilador que implementa todos los anexos (capítulos opcionales) del 
+                    estándar de Ada.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">ADA pertenece a los paradigas imperativo y al de orientado a objetos.</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-ada line-numbers" data-stard="1" style="white-space:pre-wrap">
+                with Ada.Text_IO;
+                -- Programa que muestras las tablas de multiplicar
+                procedure Tablas_De_Multiplicar is
+                Resultado: Integer;
+                begin
+                Ada.Text_IO.Put_Line("Tablas de Multiplicar");
+                Ada.Text_IO.Put_Line("=====================");
+                Ada.Text_IO.New_Line(2);
+                for Fila in 1..10 loop
+                for Columna in 1..10 loop
+                Resultado := Fila * Columna;
+                Ada.Text_IO.Put (Integer'Image(Fila) & "*" &
+                Integer'Image(Columna) & "=" &
+                Integer'Image(Resultado));
+                Ada.Text_IO.New_Line;
+                end loop;
+                end loop;
+                end Tablas_De_Multiplicar;
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='16_Tarea11.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='18_Tarea13.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

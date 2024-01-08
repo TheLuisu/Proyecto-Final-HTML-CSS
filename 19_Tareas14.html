@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 14 - SQL</h1>
+        <h2 class="nameh2">¿Qué es SQL?</h2>
+        <p class="datsIn">El Lenguaje de Consulta Estructurado popularmente conocido por sus siglas en inglés como SQL,
+            es un tipo de lenguaje de programación que ayuda a solucionar problemas específicos o relacionados con la 
+            definición, manipulación e integridad de la información representada por los datos que se almacenan en las 
+            bases de datos.
+            <br>
+            Algunos aspectos de SQL están basados en el cálculo relacional, algunos en el álgebra relacional que   
+            provienen del modelo relacional y otros a ninguno de los dos sino que son parte de SQL.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/14_Tareas_SQL3.png" class="imgV4" alt="SQL">
+                <p class="datsIn"> La sintaxis SQL se basa en la sintaxis del idioma inglés y usa muchos de los mismos
+                    elementos que la sintaxis de Visual Basic para Aplicaciones (VBA).<br>
+                    SQL no se usa solo para manipular datos, sino también para crear y modificar el diseño de objetos de base
+                    de datos, como tablas. El elemento de SQL que se usa para crear y modificar objetos de base de datos se
+                    denomina lenguaje de definición de datos (DDL).<br><br>
+                    Cláusulas SQL<br>
+                    Como una frase, una instrucción SQL tiene cláusulas. Cada cláusula realiza una función de la instrucción
+                    SQL. Algunas cláusulas son necesarias en una instrucción SELECT.<br>
+                    1. SELECT: Muestra una lista de campos que contienen datos de interés.<br>
+                    2. FROM: Muestra las tablas que contienen los campos de la cláusula SELECT.<br>
+                    3. WHERE: Especifica los criterios de campo que cada registro debe cumplir para poder ser incluido en los
+                    resultados.<br>
+                    4. ORDER BY: Especifica la forma de ordenar los resultados.<br>
+                    5. GROUP BY: En una instrucción SQL que contiene funciones de agregado, muestra los campos que no se
+                    resumen en la cláusula SELECT.<br><br>
+                    Una instrucción SQL tiene el formato general:<br>
+                </p>
+            </div>
+        </div>
+        <pre>
+            <code class="language-sql line-numbers" data-stard="1" style="white-space:pre-wrap">
+                SELECT field_1
+                FROM table_1
+                WHERE criterion_1
+                ;
+            </code>
+        </pre>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/14_Tareas_SQL.png" class="imgV4" alt="SQL"><img src="IMG/Tareas/14_Tareas_SQL2.png" class="imgV5" alt="SQL">
+                <p class="datsIn">Dado que es un lenguaje de base de datos, tiene una gran compatibilidad con gran
+                parte de las IDE que puede haber en el mercado, pues desde ACCESS de Office hasta VisualStudio
+                permite que puedas empezar a crear las bases de datos y emparejarlos, pero serian necesarios los 
+                plugins de SQL que se pueden descargar desde los mismos programas.</p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">SQL es un multiparadigmas dada la gran cantidad de lenguajes de programación con los que
+        se puede llegar a combinar.</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-sql line-numbers" data-stard="1" style="white-space:pre-wrap">
+                # CREATE TABLE Empleado
+                (
+                id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                Nombre VARCHAR(50),
+                Apellido VARCHAR(50),
+                Direccion VARCHAR(255),
+                Ciudad VARCHAR(60),
+                Telefono VARCHAR(15),
+                Peso VARCHAR (5),
+                Edad (2),
+                Actividad Específica (100),
+                idCargo INT
+                )
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='18_Tarea13.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='20_Tareas15.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

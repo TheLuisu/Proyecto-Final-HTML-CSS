@@ -1,0 +1,22 @@
+﻿.bord{
+    background-color: lightblue;
+    margin: 15px;
+    border-radius: 5px;
+}
+.clearfix{
+    overflow: auto;
+}
+.img01{
+    width: 400px;
+    float: right;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+}
+.img02{
+    width: 400px;
+    float: left;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+}

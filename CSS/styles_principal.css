@@ -1,0 +1,40 @@
+﻿.desingDatos{
+    background-color: antiquewhite;
+    border: 5px solid black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.Principal{
+    display: block;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.title{
+    width: auto;
+    background-color: lightcoral;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+    font-family: Cambria Math;
+    color: antiquewhite;
+    border-radius: 50px;
+}
+
+.dats{
+    background-color: lightblue;
+    font-style: normal;
+    font-family: Century Gothic;
+    vertical-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+    font-size: larger;
+    border-radius: 25px;
+}

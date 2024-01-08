@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 11 - Cobol</h1>
+        <h2 class="nameh2">¿Qué es Cobol?</h2>
+        <p class="datsIn">El lenguaje COBOL (acrónimo de COmmon Business-Oriented Language, Lenguaje Común Orientado a 
+            Negocios) fue creado en el año 1959 con el objetivo de crear un lenguaje de programación universal que 
+            pudiera ser usado en cualquier ordenador y que estuviera orientado principalmente a los negocios, es decir, 
+            a la llamada informática de gestión.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <h3 class="nameh3">Simbolos</h3>
+        <p class="datsIn">Las palabras reservadas del Cobol, son aquellas que el propio compilador utiliza y por lo 
+            tanto no podemos utilizar como variables en nuestros programas. Estas han ido avanzando con el paso de los 
+            tiempos y cada compilador incluso, incluyendo nuevas.<br>
+            Algunos ejemplos de esta son:<br>
+            MOVE, ACCEPT, ACCES, BACKGROUD, BEFORE, CALL, CD, etc.
+        </p>
+        <h3 class="nameh3">Sintaxis y Estructura</h3>
+        <p class="datsIn">Para facilitar la creación de programas en COBOL, la sintaxis del mismo fue creada de forma 
+            que fuese parecida al idioma inglés, evitando el uso de símbolos que se impusieron en lenguajes de 
+            programación posteriores.<br><br>
+            El código escrito en Cobol se desarrolla de manera secuencial en líneas con 80 columnas como máximo de 
+            forma que, en función de un rango de columnas o una columna en especial, se haga uso de una serie de reglas.
+            <br><br>
+            1. Desde la columna 1 hasta la 6, siendo esta última incluida, se utilizan para numerar las líneas.<br>
+            2. La columna 7 almacena comentarios.<br>
+            3. Desde la columna 8 hasta la 11, siendo ambas incluidas, se utilizan para definir los nombres de divisiones,
+            párrafos, indicadores de FD y niveles de variables. Esta sección se conoce también como Área A.<br>
+            4. De la columna 12 hasta la 72, siendo ambas incluidas, se definen las instrucciones del software.<br>
+            5. De la columna 73 hasta la 80, siendo ambas incluidas, el compilador no las toma en cuenta, por lo que no 
+            son utilizadas.<br>
+        </p>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">Cobol es del paradigma orientado a negocios.</p>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/11_Tareas_COBOL.jpg" class="imgV4" alt="COBOL">
+                <p class="datsIn">Para poder programar en COBOL es necesario un editor de texto como Notepad++, este 
+                    ya se encarga de poder redactar código. <br>
+                    Con el fin de ejecutar un programa COBOL en modo de proceso por lotes utilizando JCL, es preciso
+                    compilar el programa, y un módulo de carga se crea con todos los sub-programas. El JCL utiliza el
+                    módulo de carga y no el programa en el momento de la ejecución. Las bibliotecas de carga se
+                    concatenan y dada en el JCL en el momento de la ejecución mediante JCLLIB o STEPLIB.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-cobol line-numbers" data-stard="1" style="white-space:pre-wrap">
+                IDENTIFICATION DIVISION.
+                PROGRAM-ID. HELLO.
+                
+                ENVIRONMENT DIVISION.
+                
+                INPUT-OUTPUT SECTION.
+                FILE-CONTROL.
+                SELECT FILEN ASSIGN TO INPUT.
+                ORGANIZATION IS SEQUENTIAL.
+                ACCESS IS SEQUENTIAL.
+                
+                DATA DIVISION.
+                FILE SECTION.
+                FD FILEN
+                01 NAME PIC A(25).
+                
+                WORKING-STORAGE SECTION.
+                01 WS-STUDENT PIC A(30).
+                01 WS-ID PIC 9(5).
+                
+                LOCAL-STORAGE SECTION.
+                01 LS-CLASS PIC 9(3).
+                
+                LINKAGE SECTION.
+                01 LS-ID PIC 9(5).
+                
+                PROCEDURE DIVISION.
+                DISPLAY 'Executing COBOL program using JCL'.
+                STOP RUN.
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='15_Tarea10.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='17_Tarea12.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 14 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

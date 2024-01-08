@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 15 - Ruby</h1>
+        <h2 class="nameh2">¿Qué es Ruby?</h2>
+        <p class="datsIn">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado
+            por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo 
+            presentó públicamente en 1995. Combina una sintaxis inspirada en Python y Perl con características de 
+            programación orientada a objetos similares a Smalltalk. Comparte también funcionalidad con otros lenguajes
+            de programación como Lisp, Lua, Dylan y CLU. Ruby es un lenguaje de programación interpretado en una sola 
+            pasada y su implementación oficial es distribuida bajo una licencia de software libre.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/15_Tareas_Ruby.png" class="imgV4" alt="RUBY">
+                <p class="datsIn">La sintaxis y estructura de Ruby es similar a la de Perl o Python. La definición de clases y métodos
+                    está definida por palabras clave. Sin embargo, en Perl, las variables no llevan prefijos. Cuando se usa,
+                    un prefijo indica el ámbito de las variables. La mayor diferencia con C y Perl es que las palabras clave
+                    son usadas para definir bloques de código sin llaves. Los saltos de línea son significativos y son
+                    interpretados como el final de una sentencia; el punto y coma tiene el mismo uso. A diferencia de Python,
+                    la sangría no es significativa. <br><br>
+                    Una de las diferencias entre Ruby y Python y Perl es que Ruby mantiene todas sus variables de instancia
+                    privadas dentro de las clases y solo la expone a través de métodos de acceso
+                    (attr_writer, attr_reader, etc.). A diferencia de los métodos get y set de otros lenguajes como C++ o Java,
+                    los métodos de acceso en Ruby pueden ser escritos con una sola línea de código. Como la invocación de estos
+                    métodos no requiere el uso de paréntesis, es trivial cambiar una variable de instancia en una función sin
+                    tocar una sola línea de código o refactorizar dicho código. Los descriptores de propiedades de Python son
+                    similares pero tienen una desventaja en el proceso de desarrollo. Si uno comienza en Python usando una
+                    instancia de variable expuesta públicamente y después cambia la implementación para usar una instancia de
+                    variable privada expuesta a través de un descriptor de propiedades, el código interno de la clase
+                    necesitará ser ajustado para usar la variable privada en vez de la propiedad pública. Ruby elimina
+                    está decisión de diseño obligando a todas las variables de instancia a ser privadas, pero también
+                    proporciona una manera sencilla de declarar métodos set y get. Esto mantiene el principio de que en
+                    Ruby no se puede acceder a los miembros internos de una clase desde fuera de esta; en lugar de esto se
+                    pasa un mensaje (se invoca un método) a la clase y recibe una respuesta.
+                    <br><br>
+                    Algunos de los simbolos reservador por Ruby son: <br>
+                    alias, and, break, case, class, def, defined?, do, else, end, ensure, false, true, etc.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/15_Tareas_Ruby2.png" class="imgV4" alt="Ruby"><img src="IMG/Tareas/15_Tareas_Ruby3.png" class="imgV5" alt="Ruby">
+                <p class="datsIn"> Es necesario tener el lenguaje instalado, en este caso, en la página oficial está el 
+                    instalador de Ruby, solo es necesario descargarlo e instalarlo para poder tener el lenguaje en la
+                    computadora.
+                    <br><br>
+                    Para poder escribir código de mejor manera, sería necesario descargar Ruby on 
+                    Rails, esté es un framework de aplicaciones web de código abierto escrito en el lenguaje de 
+                    programación Ruby, siguiendo el paradigma del patrón Modelo Vista Controlador (MVC). Trata de 
+                    combinar la simplicidad con la posibilidad de desarrollar aplicaciones del mundo real escribiendo 
+                    menos código que con otros frameworks y con un mínimo de configuración.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">¿A qué paradigma pertenece?</h2>
+        <p class="datsIn">Description</p>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-ruby line-numbers" data-stard="1" style="white-space:pre-wrap">
+                # Programa para hallar el factorial de un número
+                
+                def fact(n)
+                  if n == 0
+                    1
+                  else
+                    n * fact(n-1)
+                  end
+                end
+                print fact(ARGV[0].to_i), "\n"
+                
+                % ruby fact.rb 1
+                1
+                % ruby fact.rb 5
+                120
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='19_Tareas14.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='21_Tarea16.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

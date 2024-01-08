@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 09 - R</h1>
+        <h2 class="nameh2">¿Qué es R?</h2>
+        <p class="datsIn">R es un entorno y lenguaje de programación con un enfoque al análisis estadístico.
+            <br>
+            R nació como una reimplementación de software libre del lenguaje S, adicionado con soporte para ámbito estático. 
+            Se trata de uno de los lenguajes de programación más utilizados en investigación científica, siendo además muy popular en los campos de aprendizaje automático 
+            (machine learning), minería de datos, investigación biomédica, bioinformática y matemáticas financieras. A esto contribuye la posibilidad de cargar diferentes 
+            bibliotecas o paquetes con funcionalidades de cálculo y graficación.</p>
+        <h2 class="nameh2">Simbolos, sintaxis y esquelos de los programas</h2>
+        <h3 class="nameh3">Simbolos</h3>
+        <p class="datsIn">R tiene palabras reservadas como son los nombres de las instrucciones utilizadas en el lenguaje de programación (break, for, function, if, in, next, repeat, return, while)
+            y los de las funciones incorporadas en el propio entorno del programa, que no se pueden
+            usar como identificador de objetos. En el caso de intentar redefinir una función ya utilizada
+            por el programa, R advierte de la duplicidad de definiciones</p>
+        <h3 class="nameh3">Sintaxis</h3>
+        <p class="datsIn">La sintaxis en R es muy similar a la de otros lenguajes de programación como JAVA o C. Las normas básicas que definen la sintaxis de R son:
+            <br><br>
+            No se tienen en cuenta los espacios en blancos: podemos o no dejar espacios para que el código se puede ordenar de forma adecuada y poder entenderse.
+            Se distinguen las mayúsculas y minúsculas: para variables en el código, podemos crear diferentes variables con nombres iguales pero alternando mayúsculas y minúsculas.
+            Se pueden incluir comentarios: como vimos anteriormente los comentarios se utilizan para añadir información en el código.
+            No es necesario terminar cada sentencia con el carácter de punto y coma (;): en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con 
+            este carácter. En en cambio R podemos o no terminar de esta forma.
+            Lenguaje orientado a objetos: todo en R son objetos, las variables, datos, funciones y resultados, que se generan en R son objetos estos se modifican o manipulan con 
+            operadores o funciones (que a su vez son objetos).
+            <br><br>
+            R se divide en cinco clases básicas o atómicas, estas son bloques de construcción o elementos que conforman a los objetos, son 5 clases principales: numérica o doble, 
+            entero, complejo, lógico y de carácter.</p>
+        <h2 class="nameh2">Primeros pasos: Aplicación para programar</h2>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/09_Tareas_R.png" alt="Pagina R" class="imgV5">
+                <p class="datsIn">Para poder utilizar R, necesitamos de dos cosas: Sus librerias y su IDE.<br><br>
+                    Para descargar R: <br>
+                    1. Primero se entra a la página oficial del proyecto R. En esta página se nos da la definición de R, “R es un entorno de software libre para calculo y gráficos estadísticos”.
+                    Para descargarlo entramos en CRAN que es una Red integral de Archivos de R<br>
+                    2. Selecciona el servidor más cerca o se puede seleccionar la primera opción el cual nos direcciona automáticamente al servidor más cercano.<br>
+                    3. Descargamos para Windows, o el sistema operativo que tengamos.<br>
+                    4. R consta de 3 módulos el primero es el sistema Base que contiene la información básica para realizar los análisis y las gráficas. El segundo modulo es para modificar y
+                    editar paquetes que están disponibles y el tercer módulo es para construir paquetes desde 0.
+                    Se pueden instalar los tres módulos o con solo instalar el modulo base, sera suficiente. <br>
+                    5. Se descarga R studio, que es un IDE un ambiente de desarrollo integrado para R o sea es una aplicación que proporciona servicios que integra y facilita al usuario la
+                    utilización del software programación, a un mas sencillo es programa que facilita la utilización del software de programación.
+                </p>
+            </div>
+        </div>
+        <h2 class="nameh2">Ejemplo de un programa</h2>
+        <pre>
+            <code class="language-r line-numbers" data-stard="1" style="white-space:pre-wrap">
+                > rnorm(5) # 5 numeros aleatorios de una distribucion normal (mean= 0, sd = 1)
+                > ## Hemos dicho que "#" indica el comienzo de un comentario?
+                >
+                > ## Los numeros se producen, y se muestran (print).
+                >
+                > x <- rnorm(5) # asignamos esos numeros a un objeto (un vector) llamado x.
+                > summary(x) ## mostrar un "summary" de x (un summary "inteligente").
+                >
+                > ## o tambien:
+                > w <- summary(x)
+                > w
+                > print(w) # teclear w y print(y) producen el mismo resultado.
+                >
+                > ## summary(x) TAMBIEN es un objeto. (virtually) "everything is an object".
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='13_Tarea08.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='15_Tarea10.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>

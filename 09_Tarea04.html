@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Tarea 04 - Compiladores e Interpretes</h1>
+        <h2 class="nameh2">Compiladores</h2>
+        <h3 class="nameh3">¿Qué son?</h3>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/04_Tareas_interprete.png" class="imgV3">
+                <p class="datsIn">Es un programa informático que traduce todo el código fuente de un proyecto de software a código 
+                    máquina antes de ejecutarlo. Solo entonces el procesador ejecuta el software, obteniendo todas las instrucciones
+                    en código máquina antes de comenzar. De esta manera, el procesador cuenta con todos los componentes necesarios
+                    para ejecutar el software, procesar las entradas y generar los resultados.</p>
+            </div>
+        </div>
+        <h3 class="nameh3">Historia</h3>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/04_Tareas_compilador-2.jpg" class="imgV3">
+                <p class="datsIn">En 1938, Konrad Zuse desarrolló la primera computadora digital electromecánica, denominada Z1 en 
+                    Alemania, y posteriormente, en 1946, se desarrolló la primera computadora totalmente electrónica ENIAC, 
+                    sucedida principalmente por la EDVAC (1951), primera computadora electrónica digital. En un principio, estas 
+                    máquinas ejecutaban instrucciones consistentes en códigos numéricos que señalaban a los circuitos de la máquina
+                    los estados correspondientes a cada operación, lo que se denominó lenguaje máquina.
+                    <br><br>
+                    Pronto los primeros usuarios de estos ordenadores descubrieron la ventaja de escribir sus programas mediante 
+                    claves más fáciles de recordar que esos códigos; al final, todas esas claves juntas se traducían manualmente 
+                    a lenguaje máquina. Estas claves constituyen los llamados lenguajes ensambladores.
+                    <br><br>
+                    Pese a todo, el lenguaje ensamblador seguía siendo el de una máquina, pero más fácil de manejar (las 
+                    instrucciones de máquina se reemplazan por mnemónicos. Los trabajos de investigación se orientaron hacia la 
+                    creación de un lenguaje que expresara las distintas acciones a realizar de una manera lo más sencilla posible
+                    para una persona. El primer compilador fue escrito por Grace Hopper, en 1952 para el lenguaje de programación 
+                    A-0. En 1950 John Backus dirigió una investigación en IBM sobre un lenguaje algebraico. En 1954 se empezó a
+                    desarrollar un lenguaje que permitía escribir fórmulas matemáticas de manera traducible por un ordenador; 
+                    le llamaron FORTRAN (FORmulae TRANslator). Fue el primer lenguaje de alto nivel y se introdujo en 1957 para 
+                    el uso de la computadora IBM modelo 704.
+                    <br><br>
+                    Surgió así por primera vez el concepto de un traductor como un programa que traducía un lenguaje a otro 
+                    lenguaje. En el caso particular de que el lenguaje a traducir es un lenguaje de alto nivel y el lenguaje 
+                    traducido de bajo nivel, se emplea el término compilador.
+                    <br><br>
+                    El trabajo de realizar un compilador fue complicado de realizar. El primer compilador de FORTRAN tardó 18 
+                    años-persona en realizarse y era muy sencillo. Este desarrollo de FORTRAN estaba muy influenciado por la 
+                    máquina objeto en la que iba a ser implementado. Como un ejemplo de ello tenemos el hecho de que los espacios
+                    en blanco fuesen ignorados, debido a que el periférico que se utilizaba como entrada de programas (una lectora
+                    de tarjetas perforadas) no contaba correctamente los espacios en blanco.
+                    <br><br>
+                    El primer compilador autocontenido, es decir, capaz de compilar su propio código fuente fue el creado para 
+                    Lisp por Hart y Levin en el MIT en 1962. Desde 1970 se ha convertido en una práctica común escribir el 
+                    compilador en el mismo lenguaje que este compila, aunque PASCAL y C han sido alternativas muy usadas.
+                    <br><br>
+                    Crear un compilador autocontenido genera un problema llamado bootstrapping, es decir el primer compilador 
+                    creado para un lenguaje tiene que o bien ser compilado por un compilador escrito en otro lenguaje o bien 
+                    compilado al ejecutar el compilador en un intérprete.</p>
+            </div>
+        </div>
+        <h3 class="nameh3">Tipos de compiladores</h3>
+        <table id="customers">
+            <tr>
+                <th>Tipo de compilador</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Cruzadps</td>
+                <td>Generan código para un sistema distinto del que están funcionando.</td>
+            </tr>
+            <tr>
+                <td>Optimizadores</td>
+                <td>Realizan cambios en el código para mejorar su eficiencia, pero manteniendo la funcionalidad del programa original.</td>
+            </tr>
+            <tr>
+                <td>De una sola pasada</td>
+                <td>Generan el código máquina a partir de una única lectura del código fuente.</td>
+            </tr>
+            <tr>
+                <td>De varias pasadas</td>
+                <td>Necesitan leer el código fuente varias veces antes de poder producir el código máquina.</td>
+            </tr>
+            <tr>
+                <td>Just In Time</td>
+                <td>Forman parte de un intérprete y compilan partes del código según se necesitan.</td>
+            </tr>
+        </table>
+        <h2 class="nameh2">Interpretes</h2>
+        <h3 class="nameh3">¿Qué son?</h3>
+        <div class="bord">
+            <div class="clearfix">
+                <img src="IMG/Tareas/04_Tareas_inter-comp.png" class="imgV3">
+                <p class="datsIn">Un intérprete es un programa que ejecuta directamente instrucciones escritas en un lenguaje 
+                    de programación o scripting , sin requerir que previamente hayan sido compiladas en un programa de lenguaje
+                    de máquina.
+                    <br><br>
+                    El intérprete transforma el programa de alto nivel en un lenguaje intermedio que luego ejecuta, o podría 
+                    analizar el código fuente de alto nivel y luego ejecuta los comandos directamente, lo hace línea por línea 
+                    o declaración por declaración.</p>
+            </div>
+        </div>
+        <h3 class="nameh3">Historia</h3>
+                    <p class="datsIn">En los comienzos de la computación, el diseño de lenguajes fue fuertemente influenciado por
+                    la decisión de usar la compilación o la interpretación como modos de ejecución. Por ejemplo, algunos 
+                    lenguajes compilados requieren que los programas deban indicar explícitamente el tipo de dato de una variable
+                    en el momento en que sea declarada o al ser usada por primera vez, mientras que algunos lenguajes
+                    interpretados toman ventaja de los aspectos dinámicos de la interpretación para hacer tales declaraciones 
+                    innecesarias. Por ejemplo, Smalltalk (1980), que fue diseñado para ser interpretado en tiempo de ejecución,
+                    permite a objetos genéricos interactuar dinámicamente entre sí.
+                    <br><br>
+                    Inicialmente, los lenguajes interpretados eran compilados línea por línea, es decir, cada línea era 
+                    compilada a medida que estaba a punto de ser ejecutada, y si un bucle o una subrutina hicieran que ciertas
+                    líneas se ejecutaran múltiples veces, serían recompiladas repetidamente. Esto ha llegado a ser mucho menos
+                    común. La mayoría de los lenguajes interpretados usan una representación intermedia, que combina tanto la
+                    compilación como la interpretación. En este caso, un compilador puede producir el código byte o el código
+                    enhebrado, que entonces es ejecutado por un intérprete de código byte.</p>
+        <h3 class="nameh3">Ejemplos</h3>
+                <p class="datsIn">Motor Zend, CPython, Ruby MRI, YARV, en:Basic</p>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='08_Tarea03.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='10_Tarea05.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+</body>
+</html>

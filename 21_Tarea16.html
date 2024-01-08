@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles_nav.css">
+    <link rel="stylesheet" href="CSS/styles_body.css">
+    <link rel="stylesheet" href="CSS/04_styles_button.css">
+    <link rel="stylesheet" href="CSS/08_styles_codificacion_Byprism.css">
+</head>
+<body>
+<header>
+    <nav id="menuPrincipal">
+        <ul class="ulhor">
+            <li class="lihor"><a href="index.html">Inicio</a> </li>
+            <li class="lihor"><a href="02_tareas_personales.html">Tareas Personales</a></li>
+            <li class="lihor"><a href="01_menu_tareas.html">Menú de Tareas</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="desingDatos">
+        <h1 class="name">Programa 01 - Java</h1>
+        <h2 class="nameh2">Conversión de Temperatura</h2>
+        
+        <pre>
+            <code class="language-java line-numbers" data-stard="1" style="white-space:pre-wrap">
+                /*
+                Luis Angel Castillo Cerda 1856931
+                Lenguajes de Programación - LMV - V5
+                Ing. Ismael Gutierrez Pimentel
+                */
+                
+                import javax.swing.JOptionPane;
+                
+                public class Tarea_16 {
+                    public static void main(String[] args){
+                        String ingreso_datos;
+                        String[] conversiones = {"Centigrados a Farenheit", "Farenheit a Centigrados"};
+                        double grados, faren, centi;
+                
+                        ingreso_datos = JOptionPane.showInputDialog("Ingresa los grados a convertir: ");
+                        grados = Double.parseDouble(ingreso_datos);
+                
+                        int conversor = JOptionPane.showOptionDialog(null,"Los grados a convertir son: " + grados, "Conversiones",
+                                JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, conversiones, null);
+                
+                        switch (conversor +1){ //ESE MALDITO +1 ES IMPORTANTE... AHHHHHHHHH!!!!!
+                            case 1: //C a F
+                
+                                faren = (grados * 1.8) + 32;
+                                JOptionPane.showMessageDialog(null, faren + " Grados Fahrenheit", "Conversion Final", JOptionPane.INFORMATION_MESSAGE);
+                                break;
+                            case 2: //F a C
+                                centi = (grados - 32) / 1.8;
+                                JOptionPane.showMessageDialog(null, centi + " Grados Centigrados", "Conversion Final", JOptionPane.INFORMATION_MESSAGE);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+</main>
+<footer>
+    <div class="desingFooterButton">
+        <button class="buttonUni button" onclick="location.href='20_Tareas15.html'">
+            Anterior
+        </button>
+        <button class="buttonUni button" onclick="location.href='index.html'">
+            Inicio
+        </button>
+        <button class="buttonUni button" onclick="location.href='22_Tarea17.html'">
+            Siguiente
+        </button>
+    </div>
+    <p class="pie">Realizado por Luis Angel Castillo, Ingeniero Administrador de Sistemas, Cuarto Semestre, 11 de Mayo 2021</p>
+</footer>
+<script src="CSS/09_JS_codificacion_Byprism.js"></script>
+</body>
+</html>
